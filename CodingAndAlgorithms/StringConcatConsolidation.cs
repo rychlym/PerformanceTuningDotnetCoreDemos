@@ -27,6 +27,12 @@ namespace Haken.PerformanceTuningDotnetCoreDemos.CodingAndAlgorithms
 		{
 			return s1 + s2 + s3;
 		}
+
+		[Benchmark]
+		public string StringConcatConcats()
+		{
+			return string.Concat(s1, s2, s3);
+		}
 	}
 }
 
